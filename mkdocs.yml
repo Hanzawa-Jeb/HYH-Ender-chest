@@ -1,5 +1,5 @@
 site_name: HYH's EnderChest
 theme:
   name: 'material'
-  logo: 'my-enderchest/assets/images/img.png'
-  favicon: 'my-enderchest/assets/images/img.png'
+  logo: 'assets/images/img.png'
+  favicon: 'assets/images/img.png'
