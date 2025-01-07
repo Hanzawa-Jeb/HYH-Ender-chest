@@ -1,0 +1,11 @@
+.md-nav__list {
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  
+  .md-nav__item--active .md-nav__list {
+    max-height: 1000px; 
+    opacity: 1;
+  }
