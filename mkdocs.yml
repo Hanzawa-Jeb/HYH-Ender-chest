@@ -1,5 +1,4 @@
 site_name: HYH's EnderChest
 theme:
   name: 'material'
-  logo: 'assets/images/img.png'
-  favicon: 'assets/images/img.png'
+  logo: 'box.png'
