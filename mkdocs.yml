@@ -1,5 +1,16 @@
-site_name: HYH's EnderChest
+site_name: HYH's 末影箱
 theme:
   name: 'material'
   logo: 'logo.png'
   favicon: 'logo.png'
+  palette:
+    primary: indigo
+
+repo_url: https://github.com/Hanzawa-Jeb/HYH-Ender-chest
+repo_name: Hanzawa-Jeb/Ender-chest
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Hanzawa-Jeb/
+
