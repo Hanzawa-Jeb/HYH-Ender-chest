@@ -38,29 +38,18 @@ nav:
   - 主页: index.md
   - 工程:
       - 工程图学笔记:
-          螺纹与螺纹紧固件: Engineering\notes\螺纹与螺纹紧固件.md
-          表面结构要求: Engineering\notes\表面结构要求.md
-          齿轮: Engineering\notes\齿轮.md
-          各类视图: Engineering\notes\各类视图.md
-          滚动轴承: Engineering\notes\滚动轴承.md
-          各类零件的视图选择: Engineering\notes\各类零件的视图选择.md
-          键与销: Engineering\notes\键与销.md
-          零件工艺结构简介: Engineering\notes\零件工艺结构简介.md
-          极限与配合与几何公差: Engineering\notes\极限与配合与几何公差.md
-          零件常见结构的尺寸注法: Engineering\notes\零件常见结构的尺寸注法.md
-          尺寸标注: Engineering\notes\尺寸标注.md
-          CAD: Engineering\notes\CAD.md
-          多种投影方式: Engineering\notes\多种投影方式.md
-      - 工程图学历年题:
-          2014-2015 秋冬 工程图学期末试题: Engineering\notes\2014-2015 秋冬 工程图学期末试题.pdf
-          2014-2015 秋冬 工程图学期末试题参考答案: Engineering\notes\2014-2015 秋冬 工程图学期末试题参考答案.pdf
-          2015-2016 秋冬 工程图学期末试题: Engineering\notes\2015-2016 秋冬 工程图学期末试题.pdf
-          2015-2016 秋冬 工程图学期末试题参考答案: Engineering\notes\2015-2016 秋冬 工程图学期末试题参考答案.pdf
-          2016-2017 秋冬 工程图学期末试题: Engineering\notes\2016-2017 秋冬 工程图学期末试题.pdf
-          2016-2017 秋冬 工程图学期末试题参考答案: Engineering\notes\2016-2017 秋冬 工程图学期末试题参考答案.pdf
-          2018-2019 秋冬 工程图学期末试题: Engineering\notes\2018-2019 秋冬 工程图学期末试题.pdf
-          2018-2019 秋冬 工程图学期末试题参考答案: Engineering\notes\2018-2019 秋冬 工程图学期末试题参考答案.pdf
-          2019-2020 秋冬 工程图学期末试题: Engineering\notes\2019-2020 秋冬 工程图学期末试题.pdf
-          2019-2020 秋冬 工程图学期末试题参考答案: Engineering\notes\2019-2020 秋冬 工程图学期末试题参考答案.pdf
-          2020-2021 秋冬 工程图学期末试题: Engineering\notes\2020-2021 秋冬 工程图学期末试题.pdf
-          2020-2021 秋冬 工程图学期末试题参考答案: Engineering\notes\2020-2021 秋冬 工程图学期末试题参考答案.pdf
+          螺纹与螺纹紧固件: Engineering/notes/螺纹与螺纹紧固件.md
+          表面结构要求: Engineering/notes/表面结构要求.md
+          齿轮: Engineering/notes/齿轮.md
+          各类视图: Engineering/notes/各类视图.md
+          滚动轴承: Engineering/notes/滚动轴承.md
+          各类零件的视图选择: Engineering/notes/各类零件的视图选择.md
+          键与销: Engineering/notes/键与销.md
+          零件工艺结构简介: Engineering/notes/零件工艺结构简介.md
+          极限与配合与几何公差: Engineering/notes/极限与配合与几何公差.md
+          零件常见结构的尺寸注法: Engineering/notes/零件常见结构的尺寸注法.md
+          尺寸标注: Engineering/notes/尺寸标注.md
+          CAD: Engineering/notes/CAD.md
+          多种投影方式: Engineering/notes/多种投影方式.md
+          零件图与装配图: Engineering/notes/零件图与装配图.md
+      - 工程图学历年题: Engineering/tests/MG_Dload_index.md
