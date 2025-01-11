@@ -1,4 +1,11 @@
-- Source Code:
+# 伯努利老虎机(Bernoulli Multi-Armed Bandit)
+## ***Algorithm Description***
+- 在这里的代码中，***cumulative regret***仅用于评估算法的优劣性而***不参与决策***！在这里决策是通过self.estimate进行评估的
+- 解决MAB问题中的UCB(***Upper Confidence Bound***)算法意思就是优先访问之前访问的较少的臂（也就是不确定性较大的臂）**在一个arm被访问次数较少时，UCB值会更大，算法倾向于访问这一支arm**
+- 解决MAB问题中的***Thompson Sampling***方法是先假设一个概率分布，并且通过一次一次的遍历来不断更新这一个概率分布的特性。随后我们会***在beta分布当中随机抽样***，在***采样次数较少的时候***，beta分布的图形会更宽，也就是说我们有更高的概率取到一个较高的数值，这个采样值就是我们在这一步***所认为的先验reward = 1***的概率，然后我们再取采样值最高的拉杆即可
+- ***为什么Thompson Sampling***是有效的？因为在一个遍历次数较少的臂上，采样采到大值的概率更大，也就有更大的概率取这一个值
+- 有关***先验概率***，这就是我们在观察到具体数据之前对一个量的初始信念或者假设，可以在后面的过程中对参数进行更新
+## ***Source Code:***
 ```python
 import numpy as np  
 import matplotlib.pyplot as plt  
@@ -76,6 +83,7 @@ epsilon_greedy_solver.run(5000)
 print('epsilon-greedy算法的cumulative regret为：', epsilon_greedy_solver.regret)  
 plot_results([epsilon_greedy_solver], ["EpsilonGreedy"]
 ```
+## ***Syntax Reminder***
 - `numpy.random.uniform(lower, higher, size = k)`意思是在lower与higher之间生成k个随机数，如果lower与higher不写那就默认是在0-1之间，返回的类型是numpy数组
 - `np.random.rand()`用于随机生成0-1之间的随机浮点数，如果括号里面有数字则可以指定返回的数据规模与数组格式
 - `np.random.seed(n)`用于生成唯一确定的随机值序列，在代码中的开头确定一次，后面调用的全部`np.random`相关函数都会依据完全相同的随机值序列进行赋值，例如
@@ -98,8 +106,3 @@ for a, b in enumerate(iteratable instance):
 ```
 - 如果对npdarray取argmax但是有多个最大值，那么将会返回***第一个最大值的索引***
 - 可以在函数的定义或者类的定义中写下某些内部参数的默认值，但是如果我在后面实例化的调用过程中具体写出了这一个值，那么就会进行覆盖。
-- 在这里的代码中，***cumulative regret***仅用于评估算法的优劣性而***不参与决策***！在这里决策是通过self.estimate进行评估的
-- 解决MAB问题中的UCB(***Upper Confidence Bound***)算法意思就是优先访问之前访问的较少的臂（也就是不确定性较大的臂）**在一个arm被访问次数较少时，UCB值会更大，算法倾向于访问这一支arm**
-- 解决MAB问题中的***Thompson Sampling***方法是先假设一个概率分布，并且通过一次一次的遍历来不断更新这一个概率分布的特性。随后我们会***在beta分布当中随机抽样***，在***采样次数较少的时候***，beta分布的图形会更宽，也就是说我们有更高的概率取到一个较高的数值，这个采样值就是我们在这一步***所认为的先验reward = 1***的概率，然后我们再取采样值最高的拉杆即可
-- ***为什么Thompson Sampling***是有效的？因为在一个遍历次数较少的臂上，采样采到大值的概率更大，也就有更大的概率取这一个值
-- 有关***先验概率***，这就是我们在观察到具体数据之前对一个量的初始信念或者假设，可以在后面的过程中对参数进行更新

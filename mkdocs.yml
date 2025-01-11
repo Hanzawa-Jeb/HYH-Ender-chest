@@ -24,7 +24,12 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
-    - content.code.annotate
+    - content.code.
+
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+      pygments_style: monokai
 
 repo_url: https://github.com/Hanzawa-Jeb/HYH-Ender-chest
 repo_name: Hanzawa-Jeb/Ender-chest
@@ -55,7 +60,9 @@ nav:
       - 工程图学历年题: Engineering/tests/MG_Dload_index.md
   - 强化学习:
       - hands-on-RL:
-          - 第一章 伯努利老虎机: hands-on-rl/伯努利老虎机（MAB， Multi-Armed Bandit）.md
+          - 第一章 伯努利老虎机(MAB): hands-on-rl/伯努利老虎机(MAB).md
+          - 第二章 马尔科夫奖励过程(MRP): hands-on-rl/马尔科夫奖励过程(MRP).md
+          - 第三章 马尔科夫决策过程(MDP): hands-on-rl/马尔科夫决策过程(MDP).md
   - 计算机语言:
       - C:
           - C程序设计基础及实验(C尖)应试笔记:
