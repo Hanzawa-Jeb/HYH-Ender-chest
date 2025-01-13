@@ -60,9 +60,11 @@ nav:
       - 工程图学历年题: Engineering/tests/MG_Dload_index.md
   - 强化学习:
       - hands-on-RL:
-          - 第一章 伯努利老虎机(MAB): hands-on-rl/伯努利老虎机(MAB).md
-          - 第二章 马尔科夫奖励过程(MRP): hands-on-rl/马尔科夫奖励过程(MRP).md
-          - 第三章 马尔科夫决策过程(MDP): hands-on-rl/马尔科夫决策过程(MDP).md
+          - 伯努利老虎机(MAB): hands-on-rl/伯努利老虎机(MAB).md
+          - 马尔科夫奖励过程(MRP): hands-on-rl/马尔科夫奖励过程(MRP).md
+          - 马尔科夫决策过程(MDP): hands-on-rl/马尔科夫决策过程(MDP).md
+          - 蒙特卡洛方法(MC Method): hands-on-rl/蒙特卡洛方法(MC Method).md
+          - 动态规划方法(DP): hands-on-rl/动态规划方法(DP).md
   - 计算机语言:
       - C:
           - C程序设计基础及实验(C尖)应试笔记:
