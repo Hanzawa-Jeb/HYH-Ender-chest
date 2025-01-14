@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/">
+        <link rel="prev" href="../%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95%28MC%20Method%29/">
       
       
-        <link rel="next" href="../%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86/">
+        <link rel="next" href="../../CS/C/%E5%BA%94%E8%AF%95/%E7%BC%96%E8%AF%91%E9%A2%84%E5%A4%84%E7%90%86/">
       
       
-      <link rel="icon" href="../../../../logo.png">
+      <link rel="icon" href="../../logo.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
-        <title>数组名与指针之间的区别 - HYH的末影箱</title>
+        <title>动态规划方法(DP) - HYH的末影箱</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-array-name" class="md-skip">
+        <a href="#dynamic-programming-method" class="md-skip">
           Skip to content
         </a>
       
@@ -86,9 +86,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../../.." title="HYH的末影箱" class="md-header__button md-logo" aria-label="HYH的末影箱" data-md-component="logo">
+    <a href="../.." title="HYH的末影箱" class="md-header__button md-logo" aria-label="HYH的末影箱" data-md-component="logo">
       
-  <img src="../../../../logo.png" alt="logo">
+  <img src="../../logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              数组名与指针之间的区别
+              动态规划方法(DP)
             
           </span>
         </div>
@@ -219,7 +219,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -244,7 +244,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../Engineering/notes/%E8%9E%BA%E7%BA%B9%E4%B8%8E%E8%9E%BA%E7%BA%B9%E7%B4%A7%E5%9B%BA%E4%BB%B6/" class="md-tabs__link">
+        <a href="../../Engineering/notes/%E8%9E%BA%E7%BA%B9%E4%B8%8E%E8%9E%BA%E7%BA%B9%E7%B4%A7%E5%9B%BA%E4%BB%B6/" class="md-tabs__link">
           
   
   工程
@@ -261,17 +261,21 @@
         
   
   
+    
+  
   
     
     
       
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../../../hands-on-rl/%E4%BC%AF%E5%8A%AA%E5%88%A9%E8%80%81%E8%99%8E%E6%9C%BA%28MAB%29/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../%E4%BC%AF%E5%8A%AA%E5%88%A9%E8%80%81%E8%99%8E%E6%9C%BA%28MAB%29/" class="md-tabs__link">
           
   
   强化学习
@@ -288,7 +292,11 @@
         
   
   
+  
     
+    
+      
+  
   
   
     
@@ -296,21 +304,11 @@
       
   
   
-    
-  
   
     
     
-      
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../%E7%BC%96%E8%AF%91%E9%A2%84%E5%A4%84%E7%90%86/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E7%BC%96%E8%AF%91%E9%A2%84%E5%A4%84%E7%90%86/" class="md-tabs__link">
           
   
   计算机语言
@@ -349,9 +347,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="HYH的末影箱" class="md-nav__button md-logo" aria-label="HYH的末影箱" data-md-component="logo">
+    <a href="../.." title="HYH的末影箱" class="md-nav__button md-logo" aria-label="HYH的末影箱" data-md-component="logo">
       
-  <img src="../../../../logo.png" alt="logo">
+  <img src="../../logo.png" alt="logo">
 
     </a>
     HYH的末影箱
@@ -378,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -474,7 +472,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Engineering/notes/%E8%9E%BA%E7%BA%B9%E4%B8%8E%E8%9E%BA%E7%BA%B9%E7%B4%A7%E5%9B%BA%E4%BB%B6/" class="md-nav__link">
+      <a href="../../Engineering/notes/%E8%9E%BA%E7%BA%B9%E4%B8%8E%E8%9E%BA%E7%BA%B9%E7%B4%A7%E5%9B%BA%E4%BB%B6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -495,7 +493,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Engineering/notes/%E8%A1%A8%E9%9D%A2%E7%BB%93%E6%9E%84%E8%A6%81%E6%B1%82/" class="md-nav__link">
+      <a href="../../Engineering/notes/%E8%A1%A8%E9%9D%A2%E7%BB%93%E6%9E%84%E8%A6%81%E6%B1%82/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -516,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Engineering/notes/%E9%BD%BF%E8%BD%AE/" class="md-nav__link">
+      <a href="../../Engineering/notes/%E9%BD%BF%E8%BD%AE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -537,7 +535,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Engineering/notes/%E5%90%84%E7%B1%BB%E8%A7%86%E5%9B%BE/" class="md-nav__link">
+      <a href="../../Engineering/notes/%E5%90%84%E7%B1%BB%E8%A7%86%E5%9B%BE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -558,7 +556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Engineering/notes/%E6%BB%9A%E5%8A%A8%E8%BD%B4%E6%89%BF/" class="md-nav__link">
+      <a href="../../Engineering/notes/%E6%BB%9A%E5%8A%A8%E8%BD%B4%E6%89%BF/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -579,7 +577,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Engineering/notes/%E5%90%84%E7%B1%BB%E9%9B%B6%E4%BB%B6%E7%9A%84%E8%A7%86%E5%9B%BE%E9%80%89%E6%8B%A9/" class="md-nav__link">
+      <a href="../../Engineering/notes/%E5%90%84%E7%B1%BB%E9%9B%B6%E4%BB%B6%E7%9A%84%E8%A7%86%E5%9B%BE%E9%80%89%E6%8B%A9/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -600,7 +598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Engineering/notes/%E9%94%AE%E4%B8%8E%E9%94%80/" class="md-nav__link">
+      <a href="../../Engineering/notes/%E9%94%AE%E4%B8%8E%E9%94%80/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -621,7 +619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Engineering/notes/%E9%9B%B6%E4%BB%B6%E5%B7%A5%E8%89%BA%E7%BB%93%E6%9E%84%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+      <a href="../../Engineering/notes/%E9%9B%B6%E4%BB%B6%E5%B7%A5%E8%89%BA%E7%BB%93%E6%9E%84%E7%AE%80%E4%BB%8B/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -642,7 +640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Engineering/notes/%E6%9E%81%E9%99%90%E4%B8%8E%E9%85%8D%E5%90%88%E4%B8%8E%E5%87%A0%E4%BD%95%E5%85%AC%E5%B7%AE/" class="md-nav__link">
+      <a href="../../Engineering/notes/%E6%9E%81%E9%99%90%E4%B8%8E%E9%85%8D%E5%90%88%E4%B8%8E%E5%87%A0%E4%BD%95%E5%85%AC%E5%B7%AE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -663,7 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Engineering/notes/%E9%9B%B6%E4%BB%B6%E5%B8%B8%E8%A7%81%E7%BB%93%E6%9E%84%E7%9A%84%E5%B0%BA%E5%AF%B8%E6%B3%A8%E6%B3%95/" class="md-nav__link">
+      <a href="../../Engineering/notes/%E9%9B%B6%E4%BB%B6%E5%B8%B8%E8%A7%81%E7%BB%93%E6%9E%84%E7%9A%84%E5%B0%BA%E5%AF%B8%E6%B3%A8%E6%B3%95/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -684,7 +682,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Engineering/notes/%E5%B0%BA%E5%AF%B8%E6%A0%87%E6%B3%A8/" class="md-nav__link">
+      <a href="../../Engineering/notes/%E5%B0%BA%E5%AF%B8%E6%A0%87%E6%B3%A8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -705,7 +703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Engineering/notes/CAD/" class="md-nav__link">
+      <a href="../../Engineering/notes/CAD/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -726,7 +724,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Engineering/notes/%E5%A4%9A%E7%A7%8D%E6%8A%95%E5%BD%B1%E6%96%B9%E5%BC%8F/" class="md-nav__link">
+      <a href="../../Engineering/notes/%E5%A4%9A%E7%A7%8D%E6%8A%95%E5%BD%B1%E6%96%B9%E5%BC%8F/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -747,7 +745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Engineering/notes/%E9%9B%B6%E4%BB%B6%E5%9B%BE%E4%B8%8E%E8%A3%85%E9%85%8D%E5%9B%BE/" class="md-nav__link">
+      <a href="../../Engineering/notes/%E9%9B%B6%E4%BB%B6%E5%9B%BE%E4%B8%8E%E8%A3%85%E9%85%8D%E5%9B%BE/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -776,7 +774,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../Engineering/tests/MG_Dload_index/" class="md-nav__link">
+      <a href="../../Engineering/tests/MG_Dload_index/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -785,202 +783,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    强化学习
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            强化学习
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    hands-on-RL
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1">
-            <span class="md-nav__icon md-icon"></span>
-            hands-on-RL
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../hands-on-rl/%E4%BC%AF%E5%8A%AA%E5%88%A9%E8%80%81%E8%99%8E%E6%9C%BA%28MAB%29/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    伯努利老虎机(MAB)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../hands-on-rl/%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A4%AB%E5%A5%96%E5%8A%B1%E8%BF%87%E7%A8%8B%28MRP%29/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    马尔科夫奖励过程(MRP)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../hands-on-rl/%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A4%AB%E5%86%B3%E7%AD%96%E8%BF%87%E7%A8%8B%28MDP%29/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    马尔科夫决策过程(MDP)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../hands-on-rl/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95%28MC%20Method%29/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    蒙特卡洛方法(MC Method)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../hands-on-rl/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E6%96%B9%E6%B3%95%28DP%29/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    动态规划方法(DP)
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1015,24 +817,24 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
-    计算机语言
+    强化学习
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            计算机语言
+            强化学习
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1055,64 +857,24 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
-    C
+    hands-on-RL
   </span>
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
-            C
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_1" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4_1_1" id="__nav_4_1_1_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    C程序设计基础及实验(C尖)应试笔记
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4_1_1">
-            <span class="md-nav__icon md-icon"></span>
-            C程序设计基础及实验(C尖)应试笔记
+            hands-on-RL
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1123,11 +885,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E7%BC%96%E8%AF%91%E9%A2%84%E5%A4%84%E7%90%86/" class="md-nav__link">
+      <a href="../%E4%BC%AF%E5%8A%AA%E5%88%A9%E8%80%81%E8%99%8E%E6%9C%BA%28MAB%29/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    编译预处理
+    伯努利老虎机(MAB)
   </span>
   
 
@@ -1144,11 +906,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E5%8F%98%E9%87%8F%E5%8D%A0%E7%94%A8%E7%9A%84%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4%E5%A4%A7%E5%B0%8F/" class="md-nav__link">
+      <a href="../%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A4%AB%E5%A5%96%E5%8A%B1%E8%BF%87%E7%A8%8B%28MRP%29/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    变量占用的内存空间大小
+    马尔科夫奖励过程(MRP)
   </span>
   
 
@@ -1165,11 +927,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E6%A0%87%E5%87%86%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/" class="md-nav__link">
+      <a href="../%E9%A9%AC%E5%B0%94%E7%A7%91%E5%A4%AB%E5%86%B3%E7%AD%96%E8%BF%87%E7%A8%8B%28MDP%29/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    标准输入输出
+    马尔科夫决策过程(MDP)
   </span>
   
 
@@ -1186,242 +948,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E4%BC%A0%E5%8F%82%E9%99%90%E5%88%B6/" class="md-nav__link">
+      <a href="../%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E6%96%B9%E6%B3%95%28MC%20Method%29/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    传参限制
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E8%BF%AD%E4%BB%A3%E5%85%B3%E7%B3%BBFor%E8%AF%AD%E5%8F%A5/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    迭代关系For语句
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E5%A4%9A%E5%88%86%E6%94%AFswitch%E8%AF%AD%E5%8F%A5/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    多分支switch语句
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E%E7%AC%A6%E4%B8%ADlf%E4%B8%8Ef%E7%9A%84%E4%BD%BF%E7%94%A8/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    格式说明符中lf与f的使用
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E5%85%B3%E9%94%AE%E5%AD%97%E4%B8%8E%E6%A0%87%E8%AF%86%E7%AC%A6/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    关键字与标识符
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    函数指针
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E7%BB%93%E6%9E%84%E4%BD%93%E5%86%85%E5%AD%98Struct/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    结构体内存Struct
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E7%B1%BB%E5%9E%8B%E5%AE%9A%E4%B9%89typedef/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    类型定义
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E9%85%8D%E5%AF%B9%E5%85%B3%E7%B3%BBif-else%20pair/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    配对关系
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E5%B5%8C%E5%A5%97break/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    嵌套break
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E5%8F%96%E7%A9%BA%E9%97%B4%E5%A4%A7%E5%B0%8F/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    取空间大小
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    三目运算符
+    蒙特卡洛方法(MC Method)
   </span>
   
 
@@ -1444,12 +975,14 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    数组名与指针之间的区别
+    动态规划方法(DP)
   </span>
   
 
@@ -1460,7 +993,7 @@
         
   
   <span class="md-ellipsis">
-    数组名与指针之间的区别
+    动态规划方法(DP)
   </span>
   
 
@@ -1472,6 +1005,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1480,45 +1015,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-array-name" class="md-nav__link">
+  <a href="#algorithm-description" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 数组名（Array Name）
+      Algorithm Description
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-pointer" class="md-nav__link">
+  <a href="#source-code" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 指针（Pointer）
+      Source Code
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#syntax-reminder" class="md-nav__link">
     <span class="md-ellipsis">
-      3. 数组名与指针的区别
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 数组名退化为指针
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. 总结
+      Syntax Reminder
     </span>
   </a>
   
@@ -1533,6 +1050,135 @@
 
               
             
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    计算机语言
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            计算机语言
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    C
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            C
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_1" id="__nav_4_1_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    C程序设计基础及实验(C尖)应试笔记
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            C程序设计基础及实验(C尖)应试笔记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
               
                 
   
@@ -1540,7 +1186,343 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86/" class="md-nav__link">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E7%BC%96%E8%AF%91%E9%A2%84%E5%A4%84%E7%90%86/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    编译预处理
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E5%8F%98%E9%87%8F%E5%8D%A0%E7%94%A8%E7%9A%84%E5%86%85%E5%AD%98%E7%A9%BA%E9%97%B4%E5%A4%A7%E5%B0%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    变量占用的内存空间大小
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E6%A0%87%E5%87%86%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    标准输入输出
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E4%BC%A0%E5%8F%82%E9%99%90%E5%88%B6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    传参限制
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E8%BF%AD%E4%BB%A3%E5%85%B3%E7%B3%BBFor%E8%AF%AD%E5%8F%A5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    迭代关系For语句
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E5%A4%9A%E5%88%86%E6%94%AFswitch%E8%AF%AD%E5%8F%A5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    多分支switch语句
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E6%A0%BC%E5%BC%8F%E8%AF%B4%E6%98%8E%E7%AC%A6%E4%B8%ADlf%E4%B8%8Ef%E7%9A%84%E4%BD%BF%E7%94%A8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    格式说明符中lf与f的使用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E5%85%B3%E9%94%AE%E5%AD%97%E4%B8%8E%E6%A0%87%E8%AF%86%E7%AC%A6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    关键字与标识符
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    函数指针
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E7%BB%93%E6%9E%84%E4%BD%93%E5%86%85%E5%AD%98Struct/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    结构体内存Struct
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E7%B1%BB%E5%9E%8B%E5%AE%9A%E4%B9%89typedef/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    类型定义
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E9%85%8D%E5%AF%B9%E5%85%B3%E7%B3%BBif-else%20pair/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    配对关系
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E5%B5%8C%E5%A5%97break/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    嵌套break
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E5%8F%96%E7%A9%BA%E9%97%B4%E5%A4%A7%E5%B0%8F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    取空间大小
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E4%B8%89%E7%9B%AE%E8%BF%90%E7%AE%97%E7%AC%A6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    三目运算符
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E6%95%B0%E7%BB%84%E5%90%8D%E4%B8%8E%E6%8C%87%E9%92%88%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    数组名与指针之间的区别
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E6%96%87%E4%BB%B6%E5%A4%84%E7%90%86/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1561,7 +1543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E6%97%A0%E7%B1%BB%E5%9E%8B%E6%8C%87%E9%92%88/" class="md-nav__link">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E6%97%A0%E7%B1%BB%E5%9E%8B%E6%8C%87%E9%92%88/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1582,7 +1564,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E4%B8%80%E4%B8%AA%E8%AF%AD%E5%8F%A5%E5%86%99%E5%9C%A8%E5%A4%9A%E8%A1%8C%E7%9A%84%E6%96%B9%E6%B3%95/" class="md-nav__link">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E4%B8%80%E4%B8%AA%E8%AF%AD%E5%8F%A5%E5%86%99%E5%9C%A8%E5%A4%9A%E8%A1%8C%E7%9A%84%E6%96%B9%E6%B3%95/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1603,7 +1585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E4%BC%98%E5%85%88%E7%BA%A7/" class="md-nav__link">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E4%BC%98%E5%85%88%E7%BA%A7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1624,7 +1606,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E8%BE%97%E8%BD%AC%E7%9B%B8%E9%99%A4%E6%B3%95%E6%B1%82%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/" class="md-nav__link">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E8%BE%97%E8%BD%AC%E7%9B%B8%E9%99%A4%E6%B3%95%E6%B1%82%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1645,7 +1627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6%E7%9A%84%E9%95%BF%E5%BA%A6/" class="md-nav__link">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6%E7%9A%84%E9%95%BF%E5%BA%A6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1666,7 +1648,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/" class="md-nav__link">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1687,7 +1669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E5%AD%97%E7%AC%A6%E6%95%B0%E7%BB%84%E4%B8%8E%E5%AD%97%E7%AC%A6%E6%8C%87%E9%92%88/" class="md-nav__link">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E5%AD%97%E7%AC%A6%E6%95%B0%E7%BB%84%E4%B8%8E%E5%AD%97%E7%AC%A6%E6%8C%87%E9%92%88/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1708,7 +1690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E5%AD%97%E9%9D%A2%E9%87%8F/" class="md-nav__link">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E5%AD%97%E9%9D%A2%E9%87%8F/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1729,7 +1711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../%E5%B7%A6%E5%80%BC/" class="md-nav__link">
+      <a href="../../CS/C/%E5%BA%94%E8%AF%95/%E5%B7%A6%E5%80%BC/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1783,6 +1765,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1791,45 +1775,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-array-name" class="md-nav__link">
+  <a href="#algorithm-description" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 数组名（Array Name）
+      Algorithm Description
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-pointer" class="md-nav__link">
+  <a href="#source-code" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 指针（Pointer）
+      Source Code
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#syntax-reminder" class="md-nav__link">
     <span class="md-ellipsis">
-      3. 数组名与指针的区别
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. 数组名退化为指针
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. 总结
+      Syntax Reminder
     </span>
   </a>
   
@@ -1853,116 +1819,147 @@
   
 
 
-  <h1>数组名与指针之间的区别</h1>
-
-<p>[[C]]
-是的，<strong>数组名</strong>和<strong>指针</strong>在C/C++中是两种不同的概念，尽管它们在某些情况下可以相互转换或表现出相似的行为，但它们的本质是不同的。</p>
-<p>![[Example.png]]
-比如说这道题就==是错的==</p>
-<p>![[typetrans.png]]
-传参数时类型是相同的
-![[typetrans2.png]]
-注意这里的隐式转化
-隐式转化（==退化==）只能转化一层！</p>
-<hr />
-<h3 id="1-array-name">1. <strong>数组名（Array Name）</strong></h3>
+<h1 id="dynamic-programming-method">动态规划方法(Dynamic Programming Method)</h1>
+<h2 id="algorithm-description"><strong><em>Algorithm Description</em></strong></h2>
 <ul>
-<li><strong>本质</strong>：数组名是一个<strong>常量指针</strong>，它代表数组首元素的地址。</li>
-<li><strong>特点</strong>：</li>
-<li>数组名指向的内存地址是固定的，不能被修改（即不能重新赋值）。</li>
-<li>数组名包含了数组的大小信息（通过 <code>sizeof</code> 可以获取整个数组的大小）。</li>
-<li>数组名是一个符号，代表整个数组的内存空间。</li>
-<li><strong>示例</strong>：
-  <code>c
-  int arr[5] = {1, 2, 3, 4, 5};
-  printf("%p\n", arr); // 输出数组首元素的地址
-  printf("%lu\n", sizeof(arr)); // 输出整个数组的大小（字节数）</code>
-  在上面的例子中：</li>
-<li><code>arr</code> 是数组名，它的类型是 <code>int[5]</code>。</li>
-<li><code>sizeof(arr)</code> 返回的是整个数组的大小（<code>5 * sizeof(int)</code>）。</li>
+<li>共有两种方法，策略迭代与价值迭代，这两种方法都是<strong><em>Model-Based</em></strong>的。</li>
+<li>策略迭代中有<code>Policy Evaluation &amp; Policy Improvement</code>，策略评估通过动态规划方法来计算每一个<code>state-value</code>，后面再进行策略提升。</li>
+<li><code>Value Iteration</code>直接使用动态规划算法来实现最终的最优状态价值函数。</li>
+<li>请注意<code>Policy Iteration</code>中是先评估policy(需要很多很多步迭代)，再对策略进行相对应的改进，但是<code>Value Iteration</code>中是先对Policy进行优化，再<strong><em>仅仅对value进行单次迭代</em></strong>以更新state value的值。</li>
 </ul>
-<hr />
-<h3 id="2-pointer">2. <strong>指针（Pointer）</strong></h3>
+<h2 id="source-code"><strong><em>Source Code</em></strong></h2>
 <ul>
-<li><strong>本质</strong>：指针是一个变量，用于存储内存地址。</li>
-<li><strong>特点</strong>：</li>
-<li>指针的值可以修改（即可以指向不同的内存地址）。</li>
-<li>指针的大小是固定的（通常是 4 字节或 8 字节，取决于系统架构）。</li>
-<li>指针本身不包含所指向内存的大小信息。</li>
-<li><strong>示例</strong>：
-  <code>c
-  int arr[5] = {1, 2, 3, 4, 5};
-  int *p = arr; // 指针 p 指向数组 arr 的首元素
-  printf("%p\n", p); // 输出指针 p 的值（即数组首元素的地址）
-  printf("%lu\n", sizeof(p)); // 输出指针的大小（通常是 4 或 8 字节）</code>
-  在上面的例子中：</li>
-<li><code>p</code> 是一个指针，它的类型是 <code>int*</code>。</li>
-<li><code>sizeof(p)</code> 返回的是指针的大小，而不是数组的大小。</li>
+<li><strong><em>Policy Iteration Case:</em></strong></li>
 </ul>
-<hr />
-<h3 id="3">3. <strong>数组名与指针的区别</strong></h3>
-<table>
-<thead>
-<tr>
-<th>特性</th>
-<th>数组名</th>
-<th>指针</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>本质</strong></td>
-<td>常量指针，代表数组首元素的地址</td>
-<td>变量，存储内存地址</td>
-</tr>
-<tr>
-<td><strong>能否修改</strong></td>
-<td>不能（常量）</td>
-<td>能（变量）</td>
-</tr>
-<tr>
-<td><strong>大小信息</strong></td>
-<td>包含整个数组的大小</td>
-<td>不包含指向内存的大小</td>
-</tr>
-<tr>
-<td><strong>类型</strong></td>
-<td>数组类型（如 <code>int[5]</code>）</td>
-<td>指针类型（如 <code>int*</code>）</td>
-</tr>
-<tr>
-<td><strong><code>sizeof</code> 的结果</strong></td>
-<td>整个数组的大小（字节数）</td>
-<td>指针的大小（通常是 4 或 8 字节）</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="4">4. <strong>数组名退化为指针</strong></h3>
-<p>在某些情况下，数组名会<strong>退化为指针</strong>：
-- 当数组名作为函数参数传递时，它会退化为指向数组首元素的指针。
-- 当数组名用于表达式（如 <code>arr + 1</code>）时，它会退化为指针。</p>
-<p>示例：</p>
-<pre><code class="language-c">void printArray(int *p, int size) {
-    for (int i = 0; i &lt; size; i++) {
-        printf(&quot;%d &quot;, p[i]);
-    }
-}
+<pre><code class="language-python">import copy  
 
-int main() {
-    int arr[5] = {1, 2, 3, 4, 5};
-    printArray(arr, 5); // 数组名 arr 退化为指针
-    return 0;
-}
+class CliffWalkingEnv:  
+    def __init__(self, ncol = 12, nrow = 4):  
+        self.ncol = ncol    #the column number of the grid world  
+        self.nrow = nrow    #the row number of the grid world  
+        self.P = self.createP()     #P[state][action] will be the state transition matrix containing prob, reward and next state, the current state  
+
+    def createP(self):  
+        P = [[[] for _ in range(4)] for _ in range(self.nrow * self.ncol)]      #initialize the P table  
+        change = [[0, -1], [0, 1], [-1, 0], [1, 0]]     #represents the four action  
+        for i in range(self.nrow):  
+            for j in range(self.ncol):  
+                for a in range(4):  
+                    if i == self.nrow - 1 and j &gt; 0:  
+                        P[i * self.ncol + j][a] = [(1, i * self.ncol + j, 0, True)]     #indicates the prob of every action taken at state s  
+                        continue  
+                    next_x = min(self.ncol - 1, max(0, j + change[a][0]))  
+                    next_y = min(self.nrow - 1, max(0, i + change[a][1]))  
+                    next_state = next_y * self.ncol + next_x  
+                    reward = -1  
+                    done = False  
+                    if next_y == self.nrow - 1 and next_x &gt; 0:  
+                        done = True     #if the ending state is reached, or we have fell down, then the done is True  
+                        if next_x != self.ncol - 1:  
+                            reward = -100  
+                    P[i * self.ncol + j][a] = [(1, next_state, reward, done)]  
+        return P  
+
+class PolicyIteration:  
+    def __init__(self, env, theta, gamma):      #theta is the threshold of ending iteration  
+        self.env = env  
+        self.v = [0] * self.env.ncol * self.env.nrow    #v is the initial value of the state  
+        self.pi = [[0.25, 0.25, 0.25, 0.25] for _ in range(self.env.ncol * self.env.nrow)]      #initialize the policy  
+        self.theta = theta  
+        self.gamma = gamma  
+
+    def policy_evaluation(self):  
+        cnt = 1  
+        while 1:  
+            max_diff = 0  
+            new_v = [0] * self.env.nrow * self.env.ncol  
+            for s in range(self.env.nrow * self.env.ncol):  
+                qsa_list = []       #calculates the Q(s, a) of all actions from state s  
+                for a in range(4):  
+                    qsa = 0  
+                    for res in self.env.P[s][a]:  
+                        p, next_state, r, done = res  
+                        qsa += p * (r + self.gamma * self.v[next_state] * (1 - done))  
+                    qsa_list.append(self.pi[s][a] * qsa)  
+                new_v[s] = sum(qsa_list)  
+                max_diff = max(max_diff, abs(new_v[s] - self.v[s]))  
+            self.v = new_v  
+            if max_diff &lt; self.theta:  
+                break  
+            cnt += 1  
+        print(&quot;%d-th iteration satisfies the threshold requirements&quot; % cnt)  
+
+    def policy_improvement(self):   #the parameter should be a PolicyIteration class  
+        for s in range(self.env.nrow * self.env.ncol):  
+            qsa_list = []       #stores the state-action value of each state-action pair  
+            for a in range(4):  
+                qsa = 0  
+                for res in self.env.P[s][a]:  
+                    p, next_state, r, done = res  
+                    qsa += p * (r + self.gamma * self.v[next_state] * (1 - done))  
+                qsa_list.append(qsa)  
+            maxq = max(qsa_list)  
+            cntq = qsa_list.count(maxq)     #get the number of maxq  
+            self.pi[s] = [1/cntq if q == maxq else 0 for q in qsa_list]  
+        print(&quot;Policy Improvement finished.&quot;)  
+        return self.pi  
+
+    def policy_iteration(self):  
+        while 1:  
+            self.policy_evaluation()  
+            old_pi = copy.deepcopy(self.pi)  
+            new_pi = self.policy_improvement()  
+            if old_pi == new_pi:  
+                break  
+
+def print_agent(agent, action_meaning, disaster = [], end = []):  
+    print(&quot;State Value:&quot;)  
+    for i in range(agent.env.nrow):  
+        for j in range(agent.env.ncol):  
+            print(&quot;%6.6s&quot; % ('%.3f' % agent.v[i * agent.env.ncol + j]), end = ' ')  #outputs the state value  
+        print()  
+
+    print(&quot;Policy:&quot;)  
+    for i in range(agent.env.nrow):  
+        for j in range(agent.env.ncol):  
+            if (i * agent.env.ncol + j) in disaster:  
+                print(&quot;****&quot;, end = ' ')  
+            elif (i * agent.env.ncol + j) in end:  
+                print(&quot;EEEE&quot;, end = ' ')  
+            else:  
+                a = agent.pi[i * agent.env.ncol + j]  
+                pi_str = ''  
+                for k in range(len(action_meaning)):  
+                    pi_str += action_meaning[k] if a[k] &gt; 0 else 'o'  
+                print(pi_str)  
+        print()  
+
+env = CliffWalkingEnv()  
+action_meaning = ['^', 'v', '&lt;', '&gt;']  
+theta = 0.001  
+gamma = 0.9  
+agent = PolicyIteration(env, theta, gamma)  
+agent.policy_iteration()  
+print_agent(agent, action_meaning, list(range(37, 47)), [47])
 </code></pre>
-<p>在这个例子中，<code>arr</code> 作为函数参数传递时，退化为 <code>int*</code> 类型的指针。</p>
-<hr />
-<h3 id="5">5. <strong>总结</strong></h3>
+<h2 id="syntax-reminder"><strong><em>Syntax Reminder</em></strong></h2>
 <ul>
-<li>数组名和指针是两种不同的数据类型。</li>
-<li>数组名是一个常量指针，代表数组首元素的地址，且包含数组的大小信息。</li>
-<li>指针是一个变量，用于存储内存地址，不包含指向内存的大小信息。</li>
-<li>在某些情况下，数组名会退化为指针，但它们的本质仍然是不同的。</li>
+<li>python中类的<code>__init__(self, var1, var2)</code>语句中最好要在初始化中与类变量中采用相同的名字，虽然不同其实也不会影响运行的结果，但是为了代码的可读性我们一般都会这么做。类的</li>
+</ul>
+<pre><code class="language-python">class example:
+    def __init__(self, var1, var2):
+        self.var1 = var1
+        self.var2 = var2    #一般约定俗成我们都会使用相同的名字进行类的初始化工作 
+
+class example2:
+    def __init__(self, a, b):
+        self.c = a
+        self.d = b    #虽然这样也可以运行，但是我们一般不会这么做
+</code></pre>
+<ul>
+<li><code>[[] for j in range(4)]</code>在python中将会生成一个包含四个空列表的列表<code>[[],[],[],[]]</code></li>
+<li>注意这里P的初始化过程中<strong><em>P是按照一行一行进行存储的</em></strong>，所以在访问索引的时候要<code>i * ncol</code>来访问地址</li>
+<li><code>print(end = str)</code>中，如果不写，那么end默认等于<code>'\n'</code>，如果写了那么就会默认把这个打在前面的字符串的末尾</li>
 </ul>
 
 
@@ -2031,10 +2028,10 @@ int main() {
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.top", "header.autohide", "navigation.tracking", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code."], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top", "header.autohide", "navigation.tracking", "navigation.top", "search.highlight", "search.share", "search.suggest", "content.code."], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   </body>
