@@ -35,7 +35,7 @@
 - 根本在于使用DQN网络来***动作选择（实现决策）***，使用***目标网络来对yt(TD Target)进行更新。***
 - 这里的 ***动作选择*** 实际上与原来的轨迹并没有关系，只是用来判定如何设置TD Target而已。因为TD Target的设定过程中需要***Q(St+1, a, w-)***
 - Double DQN对Overestimation的缓解效果是最好的。
-![](3.png)
+![](3.jpg)
 ## 7. Dueling DQN
 ### 7.1 Revisiting Concepts
 - Discounted Return: 从t时刻往后全部奖励的加权求和
