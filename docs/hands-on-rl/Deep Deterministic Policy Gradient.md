@@ -1,4 +1,5 @@
-# ***Algorithm Description***
+# DDPG
+## ***Algorithm Description***
 - DDPG也是一种Actor-Critic方法，只不过更新的方式不同。
 - DDPG的Critic用于估计基于决定性策略，同样需要维护TargetNetwork与普通NetWork DDPG的Critic需要最小化TD Error，同样通过TargetNetwork来稳定TD Target的计算，稳定更新过程，同时通过软更新来维护TargetNet。
 - DDPG的Actor也需要维护一个TargetNetwork，actor的作用是根据状态选择合适的动作（确定性的）。
@@ -8,7 +9,7 @@
 - 这里在`update()`中用了***全部经历过的样本用于更新，而不是MBGD的方法***，但是可以考虑我们在训练过程中只给update输入特定数量的数据从而达到MBGD的实现。
 - ***目标Actor与目标Critic网络仅仅用于计算td_target***以确保Critic网络的更新具有更好的准确性与稳定性，但是这两个目标网络并***不会直接影响Actor网络的更新***
 - ***Actor网络的优化都是基于最新的模型的，而不是目标网络***。连续动作空间的RL算法（DDPG, TD3）中，Actor通过最大化Critic估计的Q值来优化策略，而且都是使用最新的Actor与Critic网络来进行策略优化，而不是目标网络。
-# ***Source Code***
+## ***Source Code***
 ```python
 import random  
 import gym  
@@ -138,7 +139,7 @@ plt.ylabel('MV Returns')
 plt.title("DDPG on {}".format(env_name))  
 plt.show()
 ```
-# ***Implementation Reminder***
+## ***Implementation Reminder***
 - 在连续动作空间的Actor中，我们可以在输出层使用tanh激活函数，值域为`[-1, 1]`，方便通过比例来调节成环境可以接受的动作范围。
 - `torch.cat([list1, list2], dim = 0/1)`的作用是拼接两个张量，如果dim = 0则说明行的个数发生变化，如果dim = 1则说明列的个数发生变化。
 - `nn2.load_state_dict(nn1.state_dict())`的作用是将nn1的初始参数全部赋值给nn2。

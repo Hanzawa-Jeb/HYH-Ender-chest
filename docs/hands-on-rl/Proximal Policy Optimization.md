@@ -1,9 +1,10 @@
-# ***Reminder:***
-- ![[4.png]]
+# Proximal Policy Optimization
+## ***Reminder:***
+- ![](4.png)
 - 注意PPO与A2C的优化目标是不一样的，A2C中有对数概率，PPO中只有Clip。
 - REINFORCE, A2C, A3C, DPO, ORPO都采用了对数概率，对数概率的目的是为了使得梯度的计算更加稳定，同时也能够评估策略的优劣性。
 
-# ***Algorithm Description***
+## ***Algorithm Description***
 - 如果互动的策略与学习的策略相同，则是On-policy,反之相反。
 - off-policy的优势：
 	- 一次收集到的数据可以用很多次，不会浪费数据。
@@ -131,7 +132,7 @@ plt.ylabel('Returns')
 plt.title('PPO on {}'.format(env_name))  
 plt.show()
 ```
-# ***Syntax Reminder***
+## ***Syntax Reminder***
 - `.item()`仅适用于单元素的张量，从这个单元素的张量中提取出值并转化为Python标准类型
 - `.view()`用于将原张量转换为特定的格式，其中不明确的数字可以使用-1代替，会自行计算出合适的值。
 - 代码中的`td_target`的计算都是基于二维向量的`element-wise`计算方法，都是进行逐元素的运算。

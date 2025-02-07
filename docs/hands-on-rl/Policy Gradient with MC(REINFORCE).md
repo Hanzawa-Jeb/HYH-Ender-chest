@@ -1,8 +1,9 @@
-# ***Algorithm Description***
+# PG with MC(REINFORCE)
+## ***Algorithm Description***
 - `REINFORCE`算法使用`Monte-Carlo`方法对value进行估计，而`Actor-Critic`方法则采用`TD`方法对值进行迭代
 - `∇θ​J(θ)=Es∼ρπ,a∼πθ​​[∇θ​logπθ​(a∣s)⋅Qπ(s,a)]` 这里的s要遵循策略下的访问概率，而a也应该满足该参数下的策略。所以我们只要随机挑选一个起始点并走过足够长的步数，就可以通过SGD的方法来实现梯度上升（访问到的s与a都是遵从当下的状态空间与动作空间概率分布的）
 - 估计Action Value需要Discounted Case下进行计算。
-# ***Source Code***
+## ***Source Code***
 ```python
 import gym  
 import torch  
@@ -115,7 +116,7 @@ plt.ylabel('Returns')
 plt.title('REINFORCE on {}'.format(env_name))
 plt.show()
 ```
-# ***Syntax Reminder***
+## ***Syntax Reminder***
 - `super()`中不需要指定任何参数
 - `state = torch.tensor([state], dtype = torch.float).to(self.device)`的作用是将state列表转换为`torch.tensor`且转移到指定的设备上运行，注意这里的`[state]`将state包装为了一个单元素的列表，确保张量的维度是正确的
 - ！！***一定要注意，神经网络的输入必须要是一个二维的张量，所以这里需要用 `[state]`来确保符合神经网络的输入数据格式要求***

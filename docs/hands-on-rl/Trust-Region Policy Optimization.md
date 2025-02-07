@@ -1,15 +1,16 @@
-# Basics & Preliminaries
+# Trust Region Policy Optimization
+## Basics & Preliminaries
 - 无导数随机优化是不依赖于目标函数的梯度信息而求出最优解的方法，通常通过随机采样与函数值评估来逐步逼近最优解而不用计算目标函数的导数，这种方法计算代价比较高，而且收敛的速度通常都会比较慢。
 - TRPO计算量更大但是结果一般会更加稳定
 - ***二范数***在机器学习中一般指的是两个向量之间的距离，如果二范数为0则可以认为已经完成了拟合。
 - 如果已知梯度，那么可以用`gradient ascent`来解决，如果梯度无法计算，那么可以采用随机采样来进行替代，随机采样一个`s`, 再对`f(s, θ)`对`θ`求梯度，再进行梯度上升/下降
-# Trust Region
+## Trust Region
 - `θ* = argmax J(θ)`, `N(θ)`为原先的θ的邻域(θ是一个向量)
 - 如果有一个函数`L(θ|θold)`能够在邻域`N(θ)`内拟合`J(θ)`，那么这个邻域就可以被称作为是***Trust Region(置信域)***，在这个***邻域***上我们可以用L来代替J（简化函数表达）
 - ***Trust Region Algorithm*** ，只要找到置信域内的拟合函数的最大值取值点，那么这个最大值的取值点就可以当做新一轮的θ，不断迭代就可获得结果。这个拟合函数的构造通常可以使用泰勒展开。***这种算法对算力要求比较大，但是比较稳定。***
 - 不断重复两个步骤：Approximation与Maximization,但是请注意这里有可能只能求到局部的最优值
 - 置信域的半径一般是单调递减的。
-# Trust Region Policy Optimization(TRPO)
+## Trust Region Policy Optimization(TRPO)
 - 普通的`Policy Gradient`方法虽然速度快，但是结果不稳定，而且对`Hyperparameters`的设置较为敏感，学习率的设置对结果的影响较大，收敛曲线也会剧烈地上下波动
 - `TRPO`的样本利用率更高，在同样的样本数量下拥有更佳的训练结果
 - TRPO的流程仍然分为两步：Approximation与Maximization

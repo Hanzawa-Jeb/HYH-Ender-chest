@@ -30,6 +30,8 @@ markdown_extensions:
   - pymdownx.highlight:
       use_pygments: true
       pygments_style: monokai
+  - mathjax
+
 
 repo_url: https://github.com/Hanzawa-Jeb/HYH-Ender-chest
 repo_name: Hanzawa-Jeb/Ender-chest
@@ -60,21 +62,21 @@ nav:
       - 工程图学历年题: Engineering/tests/MG_Dload_index.md
   - 机器学习:
       - 强化学习:
-          - Multi-Armed Bandit: hands-on-rl/伯努利老虎机(MAB).md
-          - Markov Reward Process: hands-on-rl/马尔科夫奖励过程(MRP).md
-          - Markov Decision Process: hands-on-rl/马尔科夫决策过程(MDP).md
-          - MC Method: hands-on-rl/蒙特卡洛方法(MC Method).md
-          - Dynamic Programming: hands-on-rl/动态规划方法(DP).md
-          - Temporal Difference: hands-on-rl/Temporal-Difference Method.md
+          - MAB: hands-on-rl/伯努利老虎机(MAB).md
+          - MRP: hands-on-rl/马尔科夫奖励过程(MRP).md
+          - MDP: hands-on-rl/马尔科夫决策过程(MDP).md
+          - MC: hands-on-rl/蒙特卡洛方法(MC Method).md
+          - DP: hands-on-rl/动态规划方法(DP).md
+          - TD: hands-on-rl/Temporal-Difference Method.md
           - DQN: hands-on-rl/Deep Q-Network.md
           - Double DQN & Dueling DQN: hands-on-rl/Optimizations of DQN.md
-          - General Advantage Estimation: hands-on-rl/General Advantage Estimation.md
-          - MC-PG(REINFORCE): hands-on-rl/Policy Gradient with MC(REINFORCE).md
-          - Advantage-Actor-Critic: hands-on-rl/Advantage Actor-Critic Method(A2C).md
+          - GAE: hands-on-rl/General Advantage Estimation.md
+          - REINFORCE: hands-on-rl/Policy Gradient with MC(REINFORCE).md
+          - GAE: hands-on-rl/Advantage Actor-Critic Method(A2C).md
           - TRPO: hands-on-rl/Trust-Region Policy Optimization.md
           - PPO: hands-on-rl/Proximal Policy Optimization.md
           - DDPG: hands-on-rl/Deep Deterministic Policy Gradient.md
-          - DeepSeek-r1 Paper: hands-on-rl/DeepSeekPaper.md
+          - DeepSeek-r1 Paper: hands-on-rl/DeepSeek Paper.md
           - tools:
               - rl_utils.md: hands-on-rl/rl_utils.md
               - PyTorch Basics: hands-on-rl/番外：PyTorch.md

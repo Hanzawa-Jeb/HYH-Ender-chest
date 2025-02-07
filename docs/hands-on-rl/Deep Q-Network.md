@@ -1,9 +1,10 @@
-# ***Algorithm Description***
+# DQN
+## ***Algorithm Description***
 - DQN与Q-Learning相比较下，DQN一次性需要更新很多参数，所以会涉及到概率分布的问题，也就会涉及到求期望，所以需要采用***experience replay***技术来保证***uniform distribution*** ，但是Q-Learning一次只会更新一个特定的Q(s, a)，故不需要考虑概率分布与期望的问题。Q-Learning也可以采用***experience replay来保证更高的经验利用率。***
 - DQN与普通的Q-learning相比较下，DQN使用了梯度来对参数进行更新而Q-Learning则是使用普通的Robbins-Monro方法。
 - 我们在实现的时候会用到`Target Network`技术，也就是在估计`TD-Target`的时候采用一个不一样的目标网络来***选择动作值最大的动作(Selection)*** 与 ***评估选择的动作的价值（Evaluation）***。在一定的迭代次数之后我们会让`Target Network`与`Q-Net`同步。（如果是在DDPG中可以采用软同步，也就是通过加权平均的方式限制同步的速度快慢），***这样可以一定程度上缓解Bootstrapping造成的Overestimation***
 - 如果是`Double DQN`，我们会在选择动作的时候采用原Network而在评估时采用`Target Network`，这样可以缓解Overestimation。
-# ***Source Code***
+## ***Source Code***
 ```python
 import random  
 import gym  
@@ -164,7 +165,7 @@ plt.ylabel('Returns')
 plt.title('DQN on {}'.format(env_name))  
 plt.show()
 ```
-# ***Syntax Reminder***
+## ***Syntax Reminder***
 - `collections`是Python中的一个标准库，内部有许多现成的数据结构。比如说`deque`就是一个***双端队列*** `(Double-Ended Queue)`，可以从队列的两端进行数据的加入或者删除，参数中可以指定最大的长度`q = collections.deque(maxlen = a)`，可以通过`q.appendleft(1)`或者`q.append(1)`分别在队列q的左侧和右侧添加元素
 - `random.sample(list, k)`实现了无放回的抽样，但是实际上并没有从序列中取出元素，这里注意k必须要小于等于sample的长度，要不然会不可避免地出现重复的取样
 - `zip(*iter_var)`可以将可迭代变量`iter_var`解包给前面的各个变量，如果没有`*`的话则是打包，而不是解包。

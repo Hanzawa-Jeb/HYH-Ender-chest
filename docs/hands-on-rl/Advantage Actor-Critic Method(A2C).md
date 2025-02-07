@@ -1,10 +1,11 @@
-# ***Algorithm Description***
+# Advantage Actor-Critic
+## ***Algorithm Description***
 - AC方法与REINFORCE算法均***使用神经网络来维护Policy Net***，区别在于如何获得Action Value
 - 最经典的`Actor-Critic`方法（QAC）中维护价值网络使用的是***基于Temporal-Difference的梯度下降方法（最小化TD-Error）***，而普通的Sarsa则是使用`Robbins-Monro`算法来对Action Value进行更新。这是因为Sarsa针对的是有噪音的表格环境，而QAC解决的是更加复杂与高维的状态空间与动作空间。
 - A2C与QAC的区别在与A2C采用Advantage Action Value来评估动作的价值，在对策略网络对参数求梯度时，A2C采用的是Advantage Action Value ,这样可以在不改变梯度期望（可用数学证明）的情况下有效地降低方差。
 - 在PolicyGradient方法中，虽然一般的Objective Function就是return的加权平均，但是我们在实现的过程中一般都会使用$E(log(\pi_\theta(a|s_t))A(a|s_t))$，***这种操作的目的是尽可能地方便计算并防止一系列问题。***
 - ***注意，这里的loss_function并不是传统机器学习中衡量两个量之间距离的函数，而是一个用于最小化的函数。*** 所以如果我们想要最大化一个值，那么我们就要在`loss.backward()`的时候在loss前面加上一个负号。
-# ***Source Code***
+## ***Source Code***
 ```python
 import gym  
 import torch  
@@ -108,7 +109,7 @@ plt.ylabel('Return')
 plt.title('A2C on {}'.format(env_name))  
 plt.show()
 ```
-# ***Syntax Reminder***
+## ***Syntax Reminder***
 - `torch.nn.functional.relu()`与`torch.nn.ReLU()`在功能上是等价的。
 - 设置优化器往往都使用类似的语法，其中self.actor是一个模型，可以通过`self.actor.parameters()`提取出模型内全部可以优化的参数。这个优化器会在后续负责更新PolicyNet`(此处为self.actor内部的可优化参数)`
 ```python
