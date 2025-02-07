@@ -58,13 +58,26 @@ nav:
           多种投影方式: Engineering/notes/多种投影方式.md
           零件图与装配图: Engineering/notes/零件图与装配图.md
       - 工程图学历年题: Engineering/tests/MG_Dload_index.md
-  - 强化学习:
-      - hands-on-RL:
-          - 伯努利老虎机(MAB): hands-on-rl/伯努利老虎机(MAB).md
-          - 马尔科夫奖励过程(MRP): hands-on-rl/马尔科夫奖励过程(MRP).md
-          - 马尔科夫决策过程(MDP): hands-on-rl/马尔科夫决策过程(MDP).md
-          - 蒙特卡洛方法(MC Method): hands-on-rl/蒙特卡洛方法(MC Method).md
-          - 动态规划方法(DP): hands-on-rl/动态规划方法(DP).md
+  - 机器学习:
+      - 强化学习:
+          - Multi-Armed Bandit: hands-on-rl/伯努利老虎机(MAB).md
+          - Markov Reward Process: hands-on-rl/马尔科夫奖励过程(MRP).md
+          - Markov Decision Process: hands-on-rl/马尔科夫决策过程(MDP).md
+          - MC Method: hands-on-rl/蒙特卡洛方法(MC Method).md
+          - Dynamic Programming: hands-on-rl/动态规划方法(DP).md
+          - Temporal Difference: hands-on-rl/Temporal-Difference Method.md
+          - DQN: hands-on-rl/Deep Q-Network.md
+          - Double DQN & Dueling DQN: hands-on-rl/Optimizations of DQN.md
+          - General Advantage Estimation: hands-on-rl/General Advantage Estimation.md
+          - MC-PG(REINFORCE): hands-on-rl/Policy Gradient with MC(REINFORCE).md
+          - Advantage-Actor-Critic: hands-on-rl/Advantage Actor-Critic Method(A2C).md
+          - TRPO: hands-on-rl/Trust-Region Policy Optimization.md
+          - PPO: hands-on-rl/Proximal Policy Optimization.md
+          - DDPG: hands-on-rl/Deep Deterministic Policy Gradient.md
+          - DeepSeek-r1 Paper: hands-on-rl/DeepSeekPaper.md
+          - tools:
+              - rl_utils.md: hands-on-rl/rl_utils.md
+              - PyTorch Basics: hands-on-rl/番外：PyTorch.md
   - 计算机语言:
       - C:
           - C程序设计基础及实验(C尖)应试笔记:
