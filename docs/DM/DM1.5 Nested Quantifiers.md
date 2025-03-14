@@ -1,0 +1,8 @@
+- 如果有多重量词，那么可以先把内层的当成**一整个Propositional Function.**
+- 只有在**全部的量词都一样的时候**，量词的前后顺序才是不重要的。 
+- 在逻辑表达式与自然语言句子之间的转换中，**全称量词的顺序应该保持不变。**
+- 如果不对Domian做提前的限定，那么可以使用**Restricted Quantifers**， 形如$\forall x > 0$
+- 注意我们都默认一个命题的值为1（当将逻辑表达式翻译为一个英文句子的时候） 
+- 当对一个具有复合Quantifer的句子进行取反的时候，就可以直接利用De Morgan Laws，也就是如果对一整个式子求逆，那就**先对Quantifier取反**，再将取反号挪到后面去。!非常重要。
+- 注意logical operator的优先级是高于任何conditional operator的，也就是说都不用加括号。
+- Prenex Normal Form(PNF)就是所有的quantifer都在最前面的情况，后面是一个表达式。

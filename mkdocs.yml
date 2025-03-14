@@ -42,44 +42,42 @@ extra:
 
 nav:
   - 主页: index.md
-  - 工程:
-      - 工程图学笔记:
-          螺纹与螺纹紧固件: Engineering/notes/螺纹与螺纹紧固件.md
-          表面结构要求: Engineering/notes/表面结构要求.md
-          齿轮: Engineering/notes/齿轮.md
-          各类视图: Engineering/notes/各类视图.md
-          滚动轴承: Engineering/notes/滚动轴承.md
-          各类零件的视图选择: Engineering/notes/各类零件的视图选择.md
-          键与销: Engineering/notes/键与销.md
-          零件工艺结构简介: Engineering/notes/零件工艺结构简介.md
-          极限与配合与几何公差: Engineering/notes/极限与配合与几何公差.md
-          零件常见结构的尺寸注法: Engineering/notes/零件常见结构的尺寸注法.md
-          尺寸标注: Engineering/notes/尺寸标注.md
-          CAD: Engineering/notes/CAD.md
-          多种投影方式: Engineering/notes/多种投影方式.md
-          零件图与装配图: Engineering/notes/零件图与装配图.md
+  - 工程图学:
+      - 螺纹与螺纹紧固件: Engineering/notes/螺纹与螺纹紧固件.md
+      - 表面结构要求: Engineering/notes/表面结构要求.md
+      - 齿轮: Engineering/notes/齿轮.md
+      - 各类视图: Engineering/notes/各类视图.md
+      - 滚动轴承: Engineering/notes/滚动轴承.md
+      - 各类零件的视图选择: Engineering/notes/各类零件的视图选择.md
+      - 键与销: Engineering/notes/键与销.md
+      - 零件工艺结构简介: Engineering/notes/零件工艺结构简介.md
+      - 极限与配合与几何公差: Engineering/notes/极限与配合与几何公差.md
+      - 零件常见结构的尺寸注法: Engineering/notes/零件常见结构的尺寸注法.md
+      - 尺寸标注: Engineering/notes/尺寸标注.md
+      - CAD: Engineering/notes/CAD.md
+      - 多种投影方式: Engineering/notes/多种投影方式.md
+      - 零件图与装配图: Engineering/notes/零件图与装配图.md
       - 工程图学历年题: Engineering/tests/MG_Dload_index.md
-  - 机器学习:
-      - 强化学习:
-          - MAB: hands-on-rl/伯努利老虎机(MAB).md
-          - MRP: hands-on-rl/马尔科夫奖励过程(MRP).md
-          - MDP: hands-on-rl/马尔科夫决策过程(MDP).md
-          - MC: hands-on-rl/蒙特卡洛方法(MC Method).md
-          - DP: hands-on-rl/动态规划方法(DP).md
-          - TD: hands-on-rl/Temporal-Difference Method.md
-          - DQN: hands-on-rl/Deep Q-Network.md
-          - Double DQN & Dueling DQN: hands-on-rl/Optimizations of DQN.md
-          - GAE: hands-on-rl/General Advantage Estimation.md
-          - REINFORCE: hands-on-rl/Policy Gradient with MC(REINFORCE).md
-          - GAE: hands-on-rl/Advantage Actor-Critic Method(A2C).md
-          - TRPO: hands-on-rl/Trust-Region Policy Optimization.md
-          - PPO: hands-on-rl/Proximal Policy Optimization.md
-          - DDPG: hands-on-rl/Deep Deterministic Policy Gradient.md
-          - DeepSeek-r1 Paper: hands-on-rl/DeepSeek Paper.md
-          - tools:
-              - rl_utils.md: hands-on-rl/rl_utils.md
-              - PyTorch Basics: hands-on-rl/番外：PyTorch.md
-  - 计算机语言:
+  - 强化学习:
+      - MAB: hands-on-rl/伯努利老虎机(MAB).md
+      - MRP: hands-on-rl/马尔科夫奖励过程(MRP).md
+      - MDP: hands-on-rl/马尔科夫决策过程(MDP).md
+      - MC: hands-on-rl/蒙特卡洛方法(MC Method).md
+      - DP: hands-on-rl/动态规划方法(DP).md
+      - TD: hands-on-rl/Temporal-Difference Method.md
+      - DQN: hands-on-rl/Deep Q-Network.md
+      - Double DQN & Dueling DQN: hands-on-rl/Optimizations of DQN.md
+      - GAE: hands-on-rl/General Advantage Estimation.md
+      - REINFORCE: hands-on-rl/Policy Gradient with MC(REINFORCE).md
+      - GAE: hands-on-rl/Advantage Actor-Critic Method(A2C).md
+      - TRPO: hands-on-rl/Trust-Region Policy Optimization.md
+      - PPO: hands-on-rl/Proximal Policy Optimization.md
+      - DDPG: hands-on-rl/Deep Deterministic Policy Gradient.md
+      - DeepSeek-r1 Paper: hands-on-rl/DeepSeek Paper.md
+      - tools:
+          - rl_utils.md: hands-on-rl/rl_utils.md
+          - PyTorch Basics: hands-on-rl/番外：PyTorch.md
+  - 计算机课程:
       - C:
           - C程序设计基础及实验(C尖)应试笔记:
               - 编译预处理: CS/C/应试/编译预处理.md
@@ -108,3 +106,25 @@ nav:
               - 字符数组与字符指针: CS/C/应试/字符数组与字符指针.md
               - 字面量: CS/C/应试/字面量.md
               - 左值: CS/C/应试/左值.md
+      - Fundamentals of Data Structures:
+          - FDS课程:
+            - 第二次课: FDS/FDS lec2.md
+            - 第三次课: FDS/FDS lec3.md
+            - 第四次课: FDS/FDS lec4.md
+          - FDS作业:
+            - 第一次作业: FDS/FDS hw1.md
+            - 第三次作业: FDS/FDS hw3.md
+            - 第四次作业: FDS/FDS hw4.md
+      - Discrete Mathematics:
+          - DM1.1: DM/DM1.1 The Propositional Logic.md
+          - DM1.2: DM1.2 Applications of Propositional Logic.md
+          - DM1.3: DM1.3 Propositional Equations.md
+          - DM1.4: DM1.4 Predicates and Quantifiers.md
+          - DM1.5: DM1.5 Nested Quantifiers.md
+          - DM1.6: DM1.6 Rules of Inference.md
+          - DM1.7: DM1.7 Introduction to Proofs.md
+          - DM1.8: DM1.8 Proof Methods and Strategy.md
+          - DM2.1: DM2.1 Sets.md
+          - DM2.2: DM2.2 Set Operations.md
+      - Computer Systems I:
+          -

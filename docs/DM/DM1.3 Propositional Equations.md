@@ -1,0 +1,14 @@
+- 复合命题(Compound Proposition)是与最小的单位命题(Atomic Proposition)相对应的概念，这里就是将最小的命题通过不同的逻辑符号进行运算得出的结果。
+- 离散数学中**向下的箭头**就代表**NOR，或非**
+- 一竖 **"|"** 代表与非
+- DNF就是 **“析取范式”**，也就是最外层是析取，里面都是合取。(a and b)or(c and d)
+- CNF就是 **“合取范式”**， 也就是最外层是合取，里面都是析取。(a or b) and (c or d)
+- $p->q == ~p \lor q$
+- $p <-> q == (p->q) \land (q->p)$
+- ==一个atomic proposition== 也是一个DNF或者CNF。
+- Distributive Law就是将在括号外面的符号与里面的符号互换。
+- $p \land (q \lor r) == (p \land q)\lor(p \land r)$
+- 如果我们说`find the assignments of p, q, r`，意思也就是让我们找出p, q, r满足对应逻辑表达式条件的解。
+- 条件语句的口号可以总结为 **前取非再取或**
+- ==千万要注意不能直接拆开括号！！！（在括号里面和外面的操作符不同的时候）==
+- 

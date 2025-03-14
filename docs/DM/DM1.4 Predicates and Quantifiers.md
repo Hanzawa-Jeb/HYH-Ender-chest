@@ -1,0 +1,14 @@
+- Predicates就是谓语，其真值就是所对应的这句话的正确性。
+- universal quantifier就是全称量词，如果有不满足这个全称量词的反例就叫做Counterexample
+- Existential Quantifier就是存在量词
+- Uniqueness Quantifier就是$\exists!$，也就是存在且仅存在一个满足条件的解。
+- 量词**在所有的逻辑运算符中有最高的优先级，只会紧紧跟着后面的项。**
+- 全称量词与Conjunction具有分配率（更加严格），存在量词与Disjunction存在分配率（更加宽松）
+- Quantifier是有他的**scope**的，也就是在量词紧跟的后面
+- 我们一般都基于一个Propositional Sentence是真的给出我们的逻辑分析。
+- quantifiers with restricted domains的问题我们一般会使用 domain限定 + （满足的条件）来进行表达。
+- **量词只能作用于变量本身而不能作用于一个predicate**。例如$\forall x (C(x) -> R(x))$ 这样的写法才是严谨的。
+- 如果一个变量有domain的限制，那么说明这个变量是***Bound***，如果没有，那么可以说这个变量是***free***。
+- 如果有**两个Quantified Expressions想要证明等效**，比如说分别用A和B来代表，则仅需证 1. 当A是真的的时候B是真的 2. B是真的的时候A是真的。
+- 前面的quantifier仅用来确定我们**谈论语境的逻辑关系**，后面括号中的内容才是真正的核心。例如all lions are fierce -> l(x)(x is a lion) f(x)(x is fierce)可以用逻辑语句表达为$\forall x (l(x) \rightarrow f(x))$ ，这里的量词仅仅用来表达逻辑的关系。
+- **d follows from a, b, c**的意思就是可以从a, b, c推导出d

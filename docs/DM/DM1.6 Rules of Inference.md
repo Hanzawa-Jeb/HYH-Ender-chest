@@ -1,0 +1,17 @@
+- 一个argument就是一系列的statement再加上最后的一个conclusion
+- 推理规则，是用于从已知命题推导出新的命题的逻辑规则。
+- 如果说一个argument 是 valid的，那么也就是说**每当他的premise是正确的时候这个argument都是正确的。** 也就是说argument的有效性是通过这个**推理的过程来体现的**。
+- Argument Form就是论证形式，能够抽象化具体命题的内容而判断论证的有效性。
+- `modus ponens`就是假言推理，也就是三段论。==肯定前件式==
+- 要判断是否premise都是正确的。只有premise均正确的时候才能推得结果是正确的。
+- modus tollens就是反过来的modus ponens（逆否命题的产生）==否定后件式==
+- Hypothetical Syllogism: 假设三段论，也就是$p \rightarrow q, q \rightarrow r, --> p \rightarrow r$ 可传递性。
+- Disjunctive Syllogism就是当两个的或是真的的时候，那么假如一边是假，那另一边一定为真。
+- Addition就是如果一个逻辑表达式为真，那么并集一定为真。Simplification就是从交集到原本，Conjunction就是如果两个都为真，那么一整个也为真。
+- Resolution: $p \lor q, \neg p \lor r \rightarrow q \lor r$，这个很重要！！==核心是消去互补的部分==，注意是disjunction
+- instantiation就是实例化。
+- Universal Instantiation: 从全称量词的总体性质推导到个体的性质
+- Universal Generalization: 从全称量词的个体都满足这个条件可以推导出全称量词的总体性质。
+- Existential Instantiation就是一定能找到符合条件的c
+- Existential Generalization就是从存在一个个体推导出群体具有这个特征。
+- universal modus ponens就是从Universal Instantiation到modus ponens.

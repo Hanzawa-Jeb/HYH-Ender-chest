@@ -1,0 +1,3 @@
+- System Specifications: 就是对一个系统的组合描述，如果说这个系统是consistent的，那么说明这中间的各种表达并不会出现矛盾的情况。
+- 所以说求解一个***System Specification是否consistent***的判断依据就是求解是否有不会互相矛盾的解。
+- 求解一些Logic Puzzle的时候往往可以使用枚举法，先从一些能够决定给多个变量的变量开始入手解决问题。
