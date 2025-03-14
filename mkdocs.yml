@@ -76,7 +76,7 @@ nav:
       - DeepSeek-r1 Paper: hands-on-rl/DeepSeek Paper.md
       - tools:
           - rl_utils.md: hands-on-rl/rl_utils.md
-          - PyTorch Basics: hands-on-rl/番外：PyTorch.md
+          - PyTorch Basics: hands-on-rl/番外: PyTorch.md
   - 计算机课程:
       - C:
           - C程序设计基础及实验(C尖)应试笔记:
@@ -117,14 +117,12 @@ nav:
             - 第四次作业: FDS/FDS hw4.md
       - Discrete Mathematics:
           - DM1.1: DM/DM1.1 The Propositional Logic.md
-          - DM1.2: DM1.2 Applications of Propositional Logic.md
-          - DM1.3: DM1.3 Propositional Equations.md
-          - DM1.4: DM1.4 Predicates and Quantifiers.md
-          - DM1.5: DM1.5 Nested Quantifiers.md
-          - DM1.6: DM1.6 Rules of Inference.md
-          - DM1.7: DM1.7 Introduction to Proofs.md
-          - DM1.8: DM1.8 Proof Methods and Strategy.md
-          - DM2.1: DM2.1 Sets.md
-          - DM2.2: DM2.2 Set Operations.md
-      - Computer Systems I:
-          -
+          - DM1.2: DM/DM1.2 Applications of Propositional Logic.md
+          - DM1.3: DM/DM1.3 Propositional Equations.md
+          - DM1.4: DM/DM1.4 Predicates and Quantifiers.md
+          - DM1.5: DM/DM1.5 Nested Quantifiers.md
+          - DM1.6: DM/DM1.6 Rules of Inference.md
+          - DM1.7: DM/DM1.7 Introduction to Proofs.md
+          - DM1.8: DM/DM1.8 Proof Methods and Strategy.md
+          - DM2.1: DM/DM2.1 Sets.md
+          - DM2.2: DM/DM2.2 Set Operations.md
