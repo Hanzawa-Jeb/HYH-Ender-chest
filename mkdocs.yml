@@ -20,17 +20,15 @@ theme:
     - navigation.top
     - header.autohide
     - navigation.tracking
-    - navigation.top
     - search.highlight
     - search.share
     - search.suggest
-    - content.code.
+    - content.code.copy  # 修正错误的 content.code.
 
 markdown_extensions:
   - pymdownx.highlight:
       use_pygments: true
       pygments_style: monokai
-
 
 repo_url: https://github.com/Hanzawa-Jeb/HYH-Ender-chest
 repo_name: Hanzawa-Jeb/Ender-chest
@@ -76,7 +74,6 @@ nav:
       - DeepSeek-r1 Paper: hands-on-rl/DeepSeek Paper.md
       - tools:
           - rl_utils.md: hands-on-rl/rl_utils.md
-          - PyTorch Basics: hands-on-rl/番外: PyTorch.md
   - 计算机课程:
       - C程:
           - 编译预处理: CS/C/应试/编译预处理.md
