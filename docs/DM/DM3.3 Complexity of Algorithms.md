@@ -1,0 +1,5 @@
+- $O(g(x))$与$\Theta(g(x))$等等仅仅是数学上的表达方式，但并不等同于算法的复杂度分析。
+- 算法的复杂度有Time complexity与Space Complexity两部分
+- Time Complexity也可以进行分类，有worst-case, best-case, average-case
+- 一般而言讨论的都是worst-case time complexity
+- 
